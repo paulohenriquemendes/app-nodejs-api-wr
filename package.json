@@ -1,0 +1,19 @@
+{
+  "name": "node-rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon ./bin/server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "mongoose": "^5.4.0",
+    "nodemon": "^1.18.9"
+  },
+  "author": "",
+  "license": "ISC"
+}
