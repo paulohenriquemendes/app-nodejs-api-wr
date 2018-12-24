@@ -9,5 +9,6 @@ questionsRoutes.get('/questions', controller.get);
 questionsRoutes.post('/question', controller.post);
 questionsRoutes.put('/question/:id', controller.put);
 questionsRoutes.delete('/question/:id', controller.delete);
+questionsRoutes.get('/question/:category', controller.getByCategory);
 
 module.exports = questionsRoutes;
