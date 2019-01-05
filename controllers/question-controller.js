@@ -26,7 +26,19 @@ exports.post = ((req, res) => {
 
 exports.get = ((req, res) => {
     Question
-        .find({},'title body items')
+        .find({},'title body items category')
+        .then(data => {
+            res.status(200).send(data);
+        })
+        .catch(e => res.status(400).send({message:'ERROR', data: e}));
+});
+
+
+exports.getById = ((req, res) => {
+    Question
+        .findById({
+            _id:req.params.id
+        })
         .then(data => {
             res.status(200).send(data);
         })
