@@ -3,8 +3,10 @@ Schema = mongoose.Schema;
 
 //criando model
 var Question = new Schema({
-    title: {type: String, required: true, trim: true},
-    body: {type: String, required: true, trim: true},
+    title: {type: String, required: true,},
+    body: {type: String},
+    questionTrue: {type: String},
+    teacherName: {type: String},
     category: {type: String, required: true, trim: true},
     items: [{
         a: {
